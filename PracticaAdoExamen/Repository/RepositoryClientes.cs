@@ -7,6 +7,22 @@ using Microsoft.Data.SqlClient;
 using PracticaAdoExamen.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
+
+//CREATE PROCEDURE SP_DATOS_CLIENTE_EMPRESA2
+//    @nombre NVARCHAR(50)
+//AS
+//BEGIN
+//    -- Información del cliente
+//    SELECT CodigoCliente, Empresa, Contacto, Cargo, Ciudad, Telefono
+//    FROM CLIENTES
+//    WHERE Empresa = @nombre;
+
+//--Pedidos relacionados
+//SELECT FechaEntrega
+//    FROM PEDIDOS
+//    WHERE CodigoCliente IN (SELECT CodigoCliente FROM CLIENTES WHERE Empresa = @nombre);
+//END
+//GO
 namespace PracticaAdoExamen.Repository
 {
     public class RepositoryClientes
